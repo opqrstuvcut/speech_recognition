@@ -15,7 +15,7 @@ public class SwiftSpeechRecognitionPlugin: NSObject, FlutterPlugin, SFSpeechReco
   private let speechRecognizerRu = SFSpeechRecognizer(locale: Locale(identifier: "ru_RU"))!
   private let speechRecognizerIt = SFSpeechRecognizer(locale: Locale(identifier: "it_IT"))!
   private let speechRecognizerEs = SFSpeechRecognizer(locale: Locale(identifier: "es_ES"))!
-  private let speechRecognizerJp = SFSpeechRecognizer(locale: Locale(identifier: "jp_JP"))!
+  private let speechRecognizerJp = SFSpeechRecognizer(locale: Locale(identifier: "ja_JP"))!
 
   private var speechChannel: FlutterMethodChannel?
 
@@ -174,7 +174,7 @@ public class SwiftSpeechRecognitionPlugin: NSObject, FlutterPlugin, SFSpeechReco
       return speechRecognizerIt
     case "es_ES":
         return speechRecognizerEs
-    case "jp_JP":
+    case "ja_JP":
 	return speechRecognizerJp
     default:
       return speechRecognizerFr
